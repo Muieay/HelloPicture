@@ -1,0 +1,16 @@
+{
+  "name": "hellopicture",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "gulp & cp -r ./src/image ./public",
+    "server": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-htmlclean": "^2.7.22"
+  }
+}
