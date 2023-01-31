@@ -20,7 +20,7 @@ fs.writeFile('./hello.json','',(err)=>{
  */
 function fileDisplay(filePath) {
     //根据文件路径读取文件，返回文件列表
-	var arr={'1':'2'}
+	var arr={'Blog personal image station':'index.html'}
     fs.readdir(filePath, (err, files)=>{
         if (err) {
             console.warn(err, "读取文件夹错误！")
@@ -40,8 +40,6 @@ function fileDisplay(filePath) {
                             console.log(filedir);
 							var key=filedir.substring(filedir.lastIndexOf('\\')+1,filedir.length)
 							var val=filedir.substring(filedir.lastIndexOf('\\src')+1,filedir.length)
-							console.log(key);
-							console.log(val);
 							arr[key]=val
 							fs.writeFileSync('./hello.json',JSON.stringify(arr),{'encoding':'utf-8'},(err)=>{
 								if(err){
