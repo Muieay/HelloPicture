@@ -12,6 +12,7 @@ fs.writeFile('./hello.json','',(err)=>{
 		throw err;
 	}
 	console.log('创建成功~');
+	console.log('https://hello.mh77.love');
 })
 
 /**
