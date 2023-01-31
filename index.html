@@ -5,8 +5,10 @@
 		<title>Title</title>
 	</head>
 	<style>
-		a{
-			display: block;
+		*{
+			margin: 0;
+			padding: 0;
+			background: url('src/2.png');
 		}
 	</style>
 	<body>
@@ -22,14 +24,8 @@
 					/*XHR对象获取到返回信息后执行*/
 					if (request.status == 200) {
 						/*返回状态为200，即为数据获取成功*/
-						var json = JSON.parse(request.responseText);
-						
-						console.log(json);
-						
+						var json = JSON.parse(request.responseText);	
 						for(var i in json){
-							console.log(i);
-							console.log(json[i]);
-							
 							var para=document.createElement("a");
 							para.setAttribute('href', json[i]);
 							// para.style.display='block';
@@ -37,6 +33,7 @@
 							para.appendChild(node);
 							var element=document.getElementById("app");
 							element.appendChild(para);
+							element.appendChild(document.createElement("br"))
 						}
 					}
 				}
