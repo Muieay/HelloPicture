@@ -1,7 +1,8 @@
 @echo off
 F:
 cd F:\Muieay\HelloPicture
-node index.js
+call node index.js
+call gulp
 call git add .
 call git commit -m "update"
 call git push
