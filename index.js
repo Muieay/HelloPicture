@@ -20,7 +20,7 @@ fs.writeFile('./hello.json','',(err)=>{
  */
 function fileDisplay(filePath) {
     //根据文件路径读取文件，返回文件列表
-	var arr={'Blog personal image station':'index.html'}
+	var arr={'HelloPicture':'index.html'}
     fs.readdir(filePath, (err, files)=>{
         if (err) {
             console.warn(err, "读取文件夹错误！")
