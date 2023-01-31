@@ -11,7 +11,7 @@ fs.writeFile('./hello.json','',(err)=>{
 	if(err){
 		throw err;
 	}
-	console.log('创建成功');
+	console.log('创建成功~');
 })
 
 /**
