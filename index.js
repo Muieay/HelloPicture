@@ -7,7 +7,7 @@ var filePath = path.resolve('src/');
 //调用文件遍历方法
 fileDisplay(filePath);
 
-fs.writeFile('./hello.json','',(err)=>{
+fs.writeFile('./public/hello.json','',(err)=>{
 	if(err){
 		throw err;
 	}
@@ -42,7 +42,7 @@ function fileDisplay(filePath) {
 							var key=filedir.substring(filedir.lastIndexOf('\\')+1,filedir.length)
 							var val=filedir.substring(filedir.lastIndexOf('\\src')+1,filedir.length)
 							arr[key]=val
-							fs.writeFileSync('./hello.json',JSON.stringify(arr),{'encoding':'utf-8'},(err)=>{
+							fs.writeFileSync('./public/hello.json',JSON.stringify(arr),{'encoding':'utf-8'},(err)=>{
 								if(err){
 									throw err;
 								}
