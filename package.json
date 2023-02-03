@@ -1,23 +1,31 @@
 {
-	"name": "hellopicture",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"build": "node index.js"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"fs": "^0.0.1-security",
-		"gulp": "^4.0.2",
-		"path": "^0.12.7",
-		"require.js": "^1.0.0"
-	},
-	"devDependencies": {
-		"gulp-html-minifier-terser": "^7.1.0",
-		"gulp-htmlclean": "^2.7.22",
-		"gulp-rename": "^2.0.0"
-	}
+  "name": "hello-picture",
+  "version": "1.0.0",
+  "description": "Blog personal image station",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "keywords": [],
+  "author": "xiaogitta",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "path": "^0.12.7",
+    "require.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-rename": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muieay/helloPicture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Muieay/helloPicture/issues"
+  },
+  "homepage": "https://github.com/Muieay/helloPicture#readme"
 }
