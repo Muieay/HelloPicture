@@ -19,7 +19,7 @@
 						var json = JSON.parse(request.responseText);
 						for (var i in json) {
 							var para = document.createElement("a");
-							para.setAttribute('href', 'https://unpkg.com/hello-picture/'+json[i]);
+							para.setAttribute('href', 'https://unpkg.com/hello-picture@latest/'+json[i]);
 							// para.style.display='block';
 							var node = document.createTextNode(i);
 							para.appendChild(node);
