@@ -14,14 +14,13 @@ fs.writeFile('./public/hello.json','',(err)=>{
 	console.log('创建成功~');
 	console.log('https://hello.mh77.love');
 })
-
+var arr={'HelloPicture':'index.html'}
 /**
  * 文件遍历方法
  * @param filePath 需要遍历的文件路径
  */
 function fileDisplay(filePath) {
     //根据文件路径读取文件，返回文件列表
-	var arr={'HelloPicture':'index.html'}
     fs.readdir(filePath, (err, files)=>{
         if (err) {
             console.warn(err, "读取文件夹错误！")
