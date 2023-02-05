@@ -1,6 +1,6 @@
 {
   "name": "hello-picture",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Blog personal image station",
   "main": "index.js",
   "scripts": {
