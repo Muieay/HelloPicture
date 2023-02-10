@@ -37,7 +37,7 @@ function fileDisplay(filePath) {
                         var isFile = stats.isFile(); //是文件
                         var isDir = stats.isDirectory(); //是文件夹
                         if (isFile) {
-                            console.log(filedir);
+                            // console.log(filedir);
 							var key=filedir.substring(filedir.lastIndexOf('\\')+1,filedir.length)
 							var val=filedir.substring(filedir.lastIndexOf('\\src')+1,filedir.length)
 							arr[key]=val
